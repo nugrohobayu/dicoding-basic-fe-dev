@@ -1,0 +1,74 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+h1,
+h2 {
+  color: red;
+}
+
+/* Salah satu contoh yang paling sering kita terapkan adalah :hover,
+ pseudo selector tersebut kita gunakan untuk menetapkan rule ketika cursor diarahkan ke target elemen. */
+
+a:hover {
+  color: red;
+}
+
+/* Untuk menggunakan pseudo-element, 
+kita gunakan dua buah tanda titik dua (::) dan diikuti dengan nama pseudo-element-nya */
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+}
+/* CSS memiliki fitur yang digunakan untuk memasukkan font eksternal ke dalam CSS, yakni menggunakan @font-face.
+ Berikut adalah contoh penulisan @font-face pada CSS. */
+@font-face {
+  font-family: "Dicoding Font";
+  src: url("FILE-FONT.TTF");
+}
+/* Dengan menggunakan properti font, kita dapat menuliskan beberapa properti hanya dalam satu properti pada satu rule. */
+/* Rumusnya : target {font: style weight varian size font-family} 
+   JANGAN SAMPAI URUTANNYA TERBALIK!!!
+*/
+p {
+  font: 24px bold sans-serif;
+}
+/* Dalam membuat sebuah dokumen tidak jarang kita membutuhkan jarak/lekuk di awal paragraf, 
+hal tersebut dapat dilakukan pada website dengan menerapkan properti text-indent. */
+div.indent {
+  text-indent: 2em;
+  text-shadow: 1px 2px 3px royalblue;
+}
+
+/* text-decoration: underline (Memberikan garis bawah (underline) pada teks.)
+text-decoration: overline (Memberikan garis atas (overline) pada teks.)
+text-decoration: line-through (Memberikan efek tulisan dicoret (strikethrough).)
+text-decoration: none (Menghilangkan dekorasi teks yang ada pada elemen.) */
+
+/* text-transform: none (Teks yang ditampilkan sama seperti yang dituliskan.)
+text-transform: capitalize (Membuat huruf pertama besar pada tiap katanya.)
+text-transform: lowercase (Membuat seluruh teks menggunakan huruf kecil.)
+Text-transform: uppercase (Membuat seluruh teks menggunakan huruf besar.) */
+
+/* Properti selanjutnya yang bisa kita gunakan untuk memformat teks adalah letter-spacing dan word-spacing. 
+Sebagaimana namanya, properti ini digunakan untuk mengatur spasi atau jarak pada teks. Properti letter-spacing digunakan
+ untuk mengatur jarak antar huruf, sedangkan word-spacing digunakan untuk mengatur jarak antar kata. */
+
+.box {
+  border-width: 2px 1px 1px 2px; /*top right bottom left*/
+  border: 4px dashed #00a2c6; /*sorthand border : div { border:width type color }*/
+  padding: 10px 15px 10px 15px; /* urutan padding top right bottom left*/
+  margin: 10px 15px; /* top dan bottom bernilai 10px, left dan right bernilai 15px */
+  box-shadow: 6px 6px 5px 10px #666666; /* menambahkan shadow didalam box*/
+  border-radius: 12px; /* menambahkan rounded didalam box*/
+}
+/* Dengan menggunakan properti display, kita dapat mengubah sebuah elemen inline menjadi block, begitu pun sebaliknya. 
+Properti ini juga dapat digunakan untuk menyembunyikan elemen yang ditampilkan. 
+inline: mengubah elemen block berperilaku seperti elemen inline.
+block: mengubah elemen inline berperilaku seperti elemen block.
+inline-block: membuat elemen block tidak menambahkan baris baru ketika dibuat, tetapi tetap mempertahankan sifat lain dari elemen block.
+none: menyembunyikan elemen dari halaman.*/

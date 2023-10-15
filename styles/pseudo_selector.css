@@ -1,0 +1,6 @@
+/* Salah satu contoh yang paling sering kita terapkan adalah :hover,
+ pseudo selector tersebut kita gunakan untuk menetapkan rule ketika cursor diarahkan ke target elemen. */
+
+a:hover {
+  color: blue;
+}
